@@ -1,0 +1,423 @@
+body,html {
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+    background-color: black !important;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Pretendard-Regular';
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.flex {
+    display: flex;
+    flex: 1;
+}
+.f_blue {
+    color: #86f8ff !important;
+}
+
+.f_500 {
+    font-weight: 500;
+}
+
+
+.wrap {
+    margin: 0 auto;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.wrap .header_cont {
+    width: 100%;
+    height: 600px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("/img/top_img.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.wrap .header_cont .login_nav {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 50px 0 50px;
+}
+
+.wrap .header_cont .login_nav >div {
+    margin-left: 20px;
+    font-size: 14px;
+    transition: ease-in-out all 0.3s;
+    cursor: pointer;
+}
+
+.wrap .header_cont .login_nav >div:hover {
+    color: #86f8ff;
+}
+
+.wrap .header {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    /*margin-bottom: 50px;*/
+}
+
+.wrap .header .title {
+    font-size: 23px;
+    margin-left: 15px;
+}
+
+.wrap .header > div {
+    cursor: pointer;
+}
+
+.wrap .header .menu {
+    padding-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: ease-in-out all 0.3s;
+}
+
+.wrap .header .menu:hover {
+    color: #86f8ff;
+}
+
+.wrap .main_cont {
+    margin-top: 180px;
+}
+
+.wrap .main_cont .title {
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+
+.wrap .main_cont .text_center {
+    align-content: center;
+}
+
+.wrap .main_cont .text_center p {
+    margin: 0 0 5px 0;
+}
+
+
+.wrap .top_cont {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 30px 50px 30px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap .top_cont .ban {
+    width: 70%;
+    height: 100%;
+    margin-right: 10px;
+}
+.wrap .top_cont .field_wrap {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /*column-gap: 10px;*/
+    justify-content: space-between;
+}
+
+/*
+
+.wrap .top_cont .field_wrap .field_menu {
+
+    transition: ease-in-out all 0.3s;
+}
+
+*/
+.wrap .top_cont .field_wrap .field_menu {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #86f8ff;
+    cursor: pointer;
+    transition: ease-in-out all 0.3s;
+}
+
+.wrap .top_cont .field_wrap .field_menu .chart {
+    position: absolute;
+    top: 0;
+    right: 337px;
+    width: 763px;
+    height: 363px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    display: none;
+
+}
+
+.wrap .top_cont .field_wrap .field_menu .chart1 {
+    background-image: url("/img/chart1.png");
+}
+
+
+.wrap .top_cont .field_wrap .field_menu .chart2 {
+    background-image: url("/img/chart2.png");
+    top: -50px;
+}
+
+
+.wrap .top_cont .field_wrap .field_menu:last-child {
+    border-bottom: none;
+}
+
+.wrap .top_cont .field_wrap .field_menu:hover {
+    color: #86f8ff;
+}
+
+.wrap .top_cont .field_wrap .menu1:hover .chart1 {
+    display: flex;
+}
+
+.wrap .top_cont .field_wrap .menu2:hover .chart2 {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+.wrap .center_cont {
+    width: 100%;
+    height: 500px;
+    background-image: url("/img/cont_img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wrap .center_cont .center_wrap {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    height: 100%;
+}
+
+.wrap .center_cont .center_wrap .curriculum_wrap {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrap .center_cont .center_wrap .curriculum_wrap .curri_title {
+    color: #86f8ff;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.wrap .center_cont .center_wrap .curriculum_wrap .curri_text {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.wrap .center_cont .center_wrap .curriculum_wrap .curri_btn {
+    width: fit-content;
+    padding: 10px 30px;
+    border: 1px solid #86f8ff;
+    background: #86f8ff;
+    color: black;
+    border-radius: 8px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: ease-in-out all 0.3s;
+}
+
+.wrap .center_cont .center_wrap .curriculum_wrap .curri_btn:hover {
+    background-color: black;
+    color: #86f8ff;
+}
+
+.wrap .center_cont .center_wrap .curriculum_wrap {}
+
+
+.wrap .center_cont .center_wrap .curriculum_info {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 5px;
+    align-items: center;
+    margin: 130px 0;
+}
+
+.wrap .center_cont .center_wrap .curriculum_info .info_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    height: 64px;
+    border: 1px solid #86f8ff;
+    border-radius: 8px;
+    color: #86f8ff;
+
+}
+
+
+
+
+.wrap .bottom_cont {
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 50px 80px 50px;
+    border-top: 1px solid #999999;
+}
+
+.wrap .bottom_cont .title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wrap .bottom_cont .board_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+.wrap .bottom_cont .board_wrap .notice_wrap {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(91, 91, 91, 0.4);
+}
+
+.wrap .bottom_cont .board_wrap .notice_wrap .title_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.wrap .bottom_cont .board_wrap .notice_wrap .title_wrap .title {
+    font-size: 15px;
+}
+
+.wrap .bottom_cont .board_wrap .notice_wrap .title_wrap .more {}
+
+
+
+.wrap .bottom_cont .board_wrap .notice_wrap .list_wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap .bottom_cont .board_wrap .notice_wrap .list_wrap .list_item {
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: 1px solid #868686;
+    margin: 10px 0;
+}
+
+.wrap .bottom_cont .board_wrap .notice_wrap .list_wrap .list_item .list_title {
+    font-size: 15px;
+
+}
+
+.wrap .bottom_cont .board_wrap .notice_wrap .list_wrap .list_item .list_date {
+    font-size: 13px;
+    margin: 5px 0 10px 0;
+    color: #868686;
+
+}
+
+
+
+
+.wrap .footer_area {
+    height: 100%;
+    background-color: #ffffff;
+    color: #595959;
+    padding-bottom: 50px;
+}
+
+.wrap .footer_area .logo_wrap {
+    height: 105px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+}
+
+
+.wrap .footer_area .footer_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.wrap .footer_area .footer_wrap .footer_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 300px 0 30px;
+}
+
+
+.wrap .footer_area .footer_wrap .footer_content .notice_wrap {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.wrap .footer_area .footer_wrap .footer_content .notice_wrap > div {
+    margin-right: 20px;
+    font-size: 15px;
+    color: black;
+}
+
+.wrap .footer_area .footer_wrap .footer_content .address {
+    font-size: 12px;
+    color: #595959;
+}
